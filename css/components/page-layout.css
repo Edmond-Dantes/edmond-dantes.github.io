@@ -1,0 +1,38 @@
+.page-layout {
+  --side-bar-width: 200px;
+  position: relative;
+  height: 100%;
+}
+
+.page-layout > .main-content {
+  padding: 2em;
+  overflow: auto;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url("../../images/background2.jpg");
+  background-size: cover;
+  margin-right: var(--side-bar-width);
+  height: 100%;
+}
+
+.page-layout > main-nav {
+  background-color: black;
+  z-index: 999;
+  display: block;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: var(--side-bar-width);
+  box-shadow: -1px 1px 10px rgba(255,255,255,0.1);
+}
+
+@media only screen and (max-width: 1000px) {
+  .page-layout > .main-content {
+    padding: 1em;
+    margin: 0px;
+  }
+  .page-layout > main-nav {
+    position: sticky;
+    width: 100%;
+    height: auto;
+  }
+}
