@@ -7,7 +7,7 @@
 .page-layout > .main-content {
   padding: 2em;
   overflow: auto;
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url("../../images/background2.jpg");
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url("../../images/background.jpg");
   background-size: cover;
   margin-right: var(--side-bar-width);
   height: 100%;
